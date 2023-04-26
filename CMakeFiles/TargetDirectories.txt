@@ -1,0 +1,2 @@
+/home/joao.victor@imd.local/Desktop/LP1/CMakeFiles/edit_cache.dir
+/home/joao.victor@imd.local/Desktop/LP1/CMakeFiles/rebuild_cache.dir
