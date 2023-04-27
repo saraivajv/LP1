@@ -9,8 +9,8 @@ set ( CMAKE_CXX_FLAGS "-Wall" )
 include_directories( include )
 # Cria um executável com nome "program" com base nos arquivos
 #main.cpp e func.cpp
-add_executable( program
-src/main.cpp
-src/func.cpp )
+add_executable( progam
+src/musica.cpp
+src/node.cpp )
 # define C++14 standard
 set_property(TARGET program PROPERTY CXX_STANDARD 14)

@@ -1,16 +1,17 @@
 #include<iostream>
 #include<string>
 #include"musica.hpp"
-#ifndef NODE_HPP
-#define NODE_HPP
-class Node
+#include"node.hpp"
+#ifndef LISTA_HPP
+#define LISTA_HPP
+class Lista
 {
 private:
-    Node* next;
+    Node* head, atual, temp;
     Musica musica;
 public:
-    Node();
-    Node(Node* n, Musica m);
+    Lista();
+    Lista(Node* n, Musica m);
     
     Node* getNext();
     Musica getMusica();
@@ -20,4 +21,4 @@ public:
     
 };
 
-#endif //NODE_HPP
+#endif //LISTA_HPP
