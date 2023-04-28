@@ -10,6 +10,8 @@ private:
 public:
     Musica();
     Musica(std::string n, std::string a);
+
+    ~Musica();
     
     std::string getNome();
     std::string getArtista();

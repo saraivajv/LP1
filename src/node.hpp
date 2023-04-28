@@ -12,6 +12,8 @@ public:
     Node();
     Node(Node* n, Musica m);
     
+    ~Node();
+    
     Node* getNext();
     Musica getMusica();
 

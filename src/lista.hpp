@@ -7,17 +7,20 @@
 class Lista
 {
 private:
-    Node* head, atual, temp;
-    Musica musica;
+    Node* head;
+    Node* atual;
+    Node* temp;
 public:
     Lista();
-    Lista(Node* n, Musica m);
+    Lista(Node* h, Node* a, Node* t);
+
+    ~Lista();
     
     Node* getNext();
-    Musica getMusica();
 
-    void setNext(Node* n);
-    void setMusica(Musica M);
+    void addNode(Musica m);
+    void deleteNode(Musica m);
+
     
 };
 

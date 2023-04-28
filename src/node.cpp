@@ -9,6 +9,10 @@ using namespace std;
         
     }
 
+    Node::~Node(){
+        
+    }
+
     Node::Node(Node* n, Musica m)
 {
     this->next = n;
@@ -32,7 +36,8 @@ void Node::setNext(Node* n)
 
 void Node::setMusica(Musica m)
 {
-        this->musica = m;
+        this->musica.setArtista(m.getArtista());
+        this->musica.setNome(m.getNome());
 } 
 
 

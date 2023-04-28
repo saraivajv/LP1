@@ -8,6 +8,10 @@ using namespace std;
         
     }
 
+    Musica::~Musica(){
+
+    }
+
     Musica::Musica(std::string n, std::string a)
 {
     this->nome = n ;
