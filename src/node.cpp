@@ -1,44 +1,33 @@
-#include"musica.hpp"
 #include"node.hpp"
 #include<iostream>
 #include<string>
 
 using namespace std;
 
-    Node::Node(){
+    template<class T>
+    Node<T>::Node(){
+        data = nullptr;
+        next = 0;
+        prev = 0;
+    }
+    
+    template<class T>
+    Node<T>::~Node(){
         
     }
 
-    Node::~Node(){
-        
+    template<class T>
+    Node<T>::Node(T node){
+        data = node;
+        next = 0;
+        prev = 0;
     }
 
-    Node::Node(Node* n, Musica m)
-{
-    this->next = n;
-    this->musica = m;
-}
+    template<class T>
+    T Node<T>::getData(){
+        return data;
+    }  
 
-Node* Node::getNext()
-{
-        return this->next;
-}
-
-Musica Node::getMusica()
-{
-        return this->musica;
-}
-
-void Node::setNext(Node* n)
-{
-        this->next = n;
-} 
-
-void Node::setMusica(Musica m)
-{
-        this->musica.setArtista(m.getArtista());
-        this->musica.setNome(m.getNome());
-} 
 
 
 
