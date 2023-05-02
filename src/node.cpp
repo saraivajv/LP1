@@ -28,6 +28,11 @@ using namespace std;
         return data;
     }  
 
+    template<class T>
+    void Node<T>::setData(T node){
+        this->data = node;
+    }  
+
 
 
 

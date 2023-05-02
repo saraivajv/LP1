@@ -1,0 +1,227 @@
+\hypertarget{class_playlist}{}\doxysection{Playlist Class Reference}
+\label{class_playlist}\index{Playlist@{Playlist}}
+
+
+definicao classe playlist  
+
+
+
+
+{\ttfamily \#include $<$include/playlist.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_playlist_aef38d55e42995be147977726350f3ada}{Playlist}} ()
+\begin{DoxyCompactList}\small\item\em construtor padrao \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_playlist_ab9d075f2674799ecd13787709cdbd274}{Playlist}} (std\+::string n)
+\begin{DoxyCompactList}\small\item\em construtor recebendo nome \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_playlist_a0ea42e1dbc68024c6c22f12f13dcc536}{Playlist}} (std\+::string n, \mbox{\hyperlink{class_lista}{Lista}}$<$ \mbox{\hyperlink{class_musica}{Musica}} $>$ $\ast$m)
+\begin{DoxyCompactList}\small\item\em construtor recebendo nome e o ponteiro para a lista \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_playlist_aacd9a69e347fc19a9a0787d7a7ce9df4}{$\sim$\+Playlist}} ()
+\begin{DoxyCompactList}\small\item\em destrutor padrao \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_playlist_a2a5b84d607ea6e50de101c46154e504b}{set\+Nome}} (std\+::string n)
+\begin{DoxyCompactList}\small\item\em setter de nome \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_playlist_a947973954473b29e0a47f0275951a86c}{set\+Musicas}} (\mbox{\hyperlink{class_lista}{Lista}}$<$ \mbox{\hyperlink{class_musica}{Musica}} $>$ $\ast$m)
+\begin{DoxyCompactList}\small\item\em setter do ponteiro de musicas \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_playlist_acf9a470dc5b8733b9631c7408e91d4ff}{add\+Musica}} (\mbox{\hyperlink{class_musica}{Musica}} m)
+\begin{DoxyCompactList}\small\item\em adiciona musica na lista \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_playlist_a450c1f830d29b53e5effd2e1083ed346}{delete\+Musica}} (\mbox{\hyperlink{class_musica}{Musica}} m)
+\begin{DoxyCompactList}\small\item\em deleta musica na lista \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_playlist_a1de4d435b452de2ef0b92bb4f310b415}{get\+Nome}} ()
+\begin{DoxyCompactList}\small\item\em retorna o nome da playlist \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista}{Lista}}$<$ \mbox{\hyperlink{class_musica}{Musica}} $>$ $\ast$ \mbox{\hyperlink{class_playlist_aceea9c42ca9de4b9c1e9304ce2ed87a8}{get\+Musicas}} ()
+\begin{DoxyCompactList}\small\item\em retorna o ponteiro para uma lista de musicas \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_node}{Node}}$<$ \mbox{\hyperlink{class_musica}{Musica}} $>$ $\ast$ \mbox{\hyperlink{class_playlist_a8ec264cdd8fcb6f623c4b747ac620237}{buscar\+Musica}} (\mbox{\hyperlink{class_musica}{Musica}} m)
+\begin{DoxyCompactList}\small\item\em retorna o iterador de uma musica \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+definicao classe playlist 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_playlist_aef38d55e42995be147977726350f3ada}\label{class_playlist_aef38d55e42995be147977726350f3ada}} 
+\index{Playlist@{Playlist}!Playlist@{Playlist}}
+\index{Playlist@{Playlist}!Playlist@{Playlist}}
+\doxysubsubsection{\texorpdfstring{Playlist()}{Playlist()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Playlist\+::\+Playlist (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+construtor padrao 
+
+
+\begin{DoxyParams}{Parameters}
+{\em NULL} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_playlist_ab9d075f2674799ecd13787709cdbd274}\label{class_playlist_ab9d075f2674799ecd13787709cdbd274}} 
+\index{Playlist@{Playlist}!Playlist@{Playlist}}
+\index{Playlist@{Playlist}!Playlist@{Playlist}}
+\doxysubsubsection{\texorpdfstring{Playlist()}{Playlist()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Playlist\+::\+Playlist (\begin{DoxyParamCaption}\item[{std\+::string}]{n }\end{DoxyParamCaption})}
+
+
+
+construtor recebendo nome 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & n nome da playlist \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_playlist_a0ea42e1dbc68024c6c22f12f13dcc536}\label{class_playlist_a0ea42e1dbc68024c6c22f12f13dcc536}} 
+\index{Playlist@{Playlist}!Playlist@{Playlist}}
+\index{Playlist@{Playlist}!Playlist@{Playlist}}
+\doxysubsubsection{\texorpdfstring{Playlist()}{Playlist()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Playlist\+::\+Playlist (\begin{DoxyParamCaption}\item[{std\+::string}]{n,  }\item[{\mbox{\hyperlink{class_lista}{Lista}}$<$ \mbox{\hyperlink{class_musica}{Musica}} $>$ $\ast$}]{m }\end{DoxyParamCaption})}
+
+
+
+construtor recebendo nome e o ponteiro para a lista 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & n nome da playlist \\
+\hline
+{\em \mbox{\hyperlink{class_lista}{Lista$<$\+Musica$>$}}} & $\ast$m ponteiro da lista \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_playlist_aacd9a69e347fc19a9a0787d7a7ce9df4}\label{class_playlist_aacd9a69e347fc19a9a0787d7a7ce9df4}} 
+\index{Playlist@{Playlist}!````~Playlist@{$\sim$Playlist}}
+\index{````~Playlist@{$\sim$Playlist}!Playlist@{Playlist}}
+\doxysubsubsection{\texorpdfstring{$\sim$Playlist()}{~Playlist()}}
+{\footnotesize\ttfamily Playlist\+::$\sim$\+Playlist (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+destrutor padrao 
+
+
+\begin{DoxyParams}{Parameters}
+{\em NULL} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_playlist_acf9a470dc5b8733b9631c7408e91d4ff}\label{class_playlist_acf9a470dc5b8733b9631c7408e91d4ff}} 
+\index{Playlist@{Playlist}!addMusica@{addMusica}}
+\index{addMusica@{addMusica}!Playlist@{Playlist}}
+\doxysubsubsection{\texorpdfstring{addMusica()}{addMusica()}}
+{\footnotesize\ttfamily void Playlist\+::add\+Musica (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_musica}{Musica}}}]{m }\end{DoxyParamCaption})}
+
+
+
+adiciona musica na lista 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_musica}{Musica}}} & m musica adicionada \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_playlist_a8ec264cdd8fcb6f623c4b747ac620237}\label{class_playlist_a8ec264cdd8fcb6f623c4b747ac620237}} 
+\index{Playlist@{Playlist}!buscarMusica@{buscarMusica}}
+\index{buscarMusica@{buscarMusica}!Playlist@{Playlist}}
+\doxysubsubsection{\texorpdfstring{buscarMusica()}{buscarMusica()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_node}{Node}}$<$ \mbox{\hyperlink{class_musica}{Musica}} $>$ $\ast$ Playlist\+::buscar\+Musica (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_musica}{Musica}}}]{m }\end{DoxyParamCaption})}
+
+
+
+retorna o iterador de uma musica 
+
+
+\begin{DoxyParams}{Parameters}
+{\em NULL} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_node}{Node$<$\+Musica$>$}}$\ast$ ponteiro da musica 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_playlist_a450c1f830d29b53e5effd2e1083ed346}\label{class_playlist_a450c1f830d29b53e5effd2e1083ed346}} 
+\index{Playlist@{Playlist}!deleteMusica@{deleteMusica}}
+\index{deleteMusica@{deleteMusica}!Playlist@{Playlist}}
+\doxysubsubsection{\texorpdfstring{deleteMusica()}{deleteMusica()}}
+{\footnotesize\ttfamily void Playlist\+::delete\+Musica (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_musica}{Musica}}}]{m }\end{DoxyParamCaption})}
+
+
+
+deleta musica na lista 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_musica}{Musica}}} & m musica deletada \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_playlist_aceea9c42ca9de4b9c1e9304ce2ed87a8}\label{class_playlist_aceea9c42ca9de4b9c1e9304ce2ed87a8}} 
+\index{Playlist@{Playlist}!getMusicas@{getMusicas}}
+\index{getMusicas@{getMusicas}!Playlist@{Playlist}}
+\doxysubsubsection{\texorpdfstring{getMusicas()}{getMusicas()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_lista}{Lista}}$<$ \mbox{\hyperlink{class_musica}{Musica}} $>$ $\ast$ Playlist\+::get\+Musicas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+retorna o ponteiro para uma lista de musicas 
+
+
+\begin{DoxyParams}{Parameters}
+{\em NULL} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{class_lista}{Lista$<$\+Musica$>$}}$\ast$ ponteiro da lista 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_playlist_a1de4d435b452de2ef0b92bb4f310b415}\label{class_playlist_a1de4d435b452de2ef0b92bb4f310b415}} 
+\index{Playlist@{Playlist}!getNome@{getNome}}
+\index{getNome@{getNome}!Playlist@{Playlist}}
+\doxysubsubsection{\texorpdfstring{getNome()}{getNome()}}
+{\footnotesize\ttfamily std\+::string Playlist\+::get\+Nome (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+retorna o nome da playlist 
+
+
+\begin{DoxyParams}{Parameters}
+{\em NULL} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string nome da playlist 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_playlist_a947973954473b29e0a47f0275951a86c}\label{class_playlist_a947973954473b29e0a47f0275951a86c}} 
+\index{Playlist@{Playlist}!setMusicas@{setMusicas}}
+\index{setMusicas@{setMusicas}!Playlist@{Playlist}}
+\doxysubsubsection{\texorpdfstring{setMusicas()}{setMusicas()}}
+{\footnotesize\ttfamily void Playlist\+::set\+Musicas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lista}{Lista}}$<$ \mbox{\hyperlink{class_musica}{Musica}} $>$ $\ast$}]{m }\end{DoxyParamCaption})}
+
+
+
+setter do ponteiro de musicas 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_lista}{Lista$<$\+Musica$>$}}} & $\ast$m ponteiro das listas de musicas \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_playlist_a2a5b84d607ea6e50de101c46154e504b}\label{class_playlist_a2a5b84d607ea6e50de101c46154e504b}} 
+\index{Playlist@{Playlist}!setNome@{setNome}}
+\index{setNome@{setNome}!Playlist@{Playlist}}
+\doxysubsubsection{\texorpdfstring{setNome()}{setNome()}}
+{\footnotesize\ttfamily void Playlist\+::set\+Nome (\begin{DoxyParamCaption}\item[{std\+::string}]{n }\end{DoxyParamCaption})}
+
+
+
+setter de nome 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & n \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{playlist_8hpp}{playlist.\+hpp}}\item 
+src/playlist.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,168 @@
+\hypertarget{class_lista}{}\doxysection{Lista\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\label{class_lista}\index{Lista$<$ T $>$@{Lista$<$ T $>$}}
+
+
+Implementação de uma classe \mbox{\hyperlink{class_lista}{Lista}}.  
+
+
+
+
+{\ttfamily \#include \char`\"{}include/node.\+hpp\char`\"{}}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_lista_adce924e21607848663132290be1a959d}{Lista}} ()
+\begin{DoxyCompactList}\small\item\em Construtor de objeto \mbox{\hyperlink{class_lista}{Lista}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_lista_af297975e278b0c92cbf67d14b2f08366}{$\sim$\+Lista}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor de objeto \mbox{\hyperlink{class_lista}{Lista}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lista_ad87a54576490f1f116d85cdc917b930b}{add\+Front}} (T node)
+\begin{DoxyCompactList}\small\item\em Função que insere elemento na frente da lista. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lista_aa3dc17df59b22efb3d23d3a987c3bcb0}{add\+Back}} (T node)
+\begin{DoxyCompactList}\small\item\em Função que insere elemento atrás da lista. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lista_abf7d43791f43762fac969ce5448438d3}{remove\+Node}} (T node)
+\begin{DoxyCompactList}\small\item\em Função que remove elemento da lista. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_lista_abd4fc319a39480a47d190c0fd2ba6c66}{print\+Lista}} ()
+\begin{DoxyCompactList}\small\item\em Função que printa a lista. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_node}{Node}}$<$ T $>$ $\ast$ \mbox{\hyperlink{class_lista_a22aafcb9896dc232fda73ddf39d61795}{Buscar}} (T node)
+\begin{DoxyCompactList}\small\item\em Função que busca elemento na lista. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class Lista$<$ T $>$}
+Implementação de uma classe \mbox{\hyperlink{class_lista}{Lista}}. 
+
+criando a lista encadeada interna com os nodes
+
+
+\begin{DoxyParams}{Parameters}
+{\em T} & Variável template \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_lista_adce924e21607848663132290be1a959d}\label{class_lista_adce924e21607848663132290be1a959d}} 
+\index{Lista$<$ T $>$@{Lista$<$ T $>$}!Lista@{Lista}}
+\index{Lista@{Lista}!Lista$<$ T $>$@{Lista$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Lista()}{Lista()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{class_lista}{Lista}}$<$ T $>$\mbox{\hyperlink{class_lista}{\+::\+Lista}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construtor de objeto \mbox{\hyperlink{class_lista}{Lista}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em NULL} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lista_af297975e278b0c92cbf67d14b2f08366}\label{class_lista_af297975e278b0c92cbf67d14b2f08366}} 
+\index{Lista$<$ T $>$@{Lista$<$ T $>$}!````~Lista@{$\sim$Lista}}
+\index{````~Lista@{$\sim$Lista}!Lista$<$ T $>$@{Lista$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$Lista()}{~Lista()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{class_lista}{Lista}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{class_lista}{Lista}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destrutor de objeto \mbox{\hyperlink{class_lista}{Lista}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em NULL} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_lista_aa3dc17df59b22efb3d23d3a987c3bcb0}\label{class_lista_aa3dc17df59b22efb3d23d3a987c3bcb0}} 
+\index{Lista$<$ T $>$@{Lista$<$ T $>$}!addBack@{addBack}}
+\index{addBack@{addBack}!Lista$<$ T $>$@{Lista$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{addBack()}{addBack()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{class_lista}{Lista}}$<$ T $>$\+::add\+Back (\begin{DoxyParamCaption}\item[{T}]{node }\end{DoxyParamCaption})}
+
+
+
+Função que insere elemento atrás da lista. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & Valor que será inserido \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lista_ad87a54576490f1f116d85cdc917b930b}\label{class_lista_ad87a54576490f1f116d85cdc917b930b}} 
+\index{Lista$<$ T $>$@{Lista$<$ T $>$}!addFront@{addFront}}
+\index{addFront@{addFront}!Lista$<$ T $>$@{Lista$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{addFront()}{addFront()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{class_lista}{Lista}}$<$ T $>$\+::add\+Front (\begin{DoxyParamCaption}\item[{T}]{node }\end{DoxyParamCaption})}
+
+
+
+Função que insere elemento na frente da lista. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & Valor que será inserido \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lista_a22aafcb9896dc232fda73ddf39d61795}\label{class_lista_a22aafcb9896dc232fda73ddf39d61795}} 
+\index{Lista$<$ T $>$@{Lista$<$ T $>$}!Buscar@{Buscar}}
+\index{Buscar@{Buscar}!Lista$<$ T $>$@{Lista$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Buscar()}{Buscar()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{class_node}{Node}}$<$ T $>$ $\ast$ \mbox{\hyperlink{class_lista}{Lista}}$<$ T $>$\+::\+Buscar (\begin{DoxyParamCaption}\item[{T}]{node }\end{DoxyParamCaption})}
+
+
+
+Função que busca elemento na lista. 
+
+\begin{DoxyReturn}{Returns}
+Iterador para o valor 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em node} & Valor que será buscado \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lista_abd4fc319a39480a47d190c0fd2ba6c66}\label{class_lista_abd4fc319a39480a47d190c0fd2ba6c66}} 
+\index{Lista$<$ T $>$@{Lista$<$ T $>$}!printLista@{printLista}}
+\index{printLista@{printLista}!Lista$<$ T $>$@{Lista$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{printLista()}{printLista()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{class_lista}{Lista}}$<$ T $>$\+::print\+Lista (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Função que printa a lista. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em NULL} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_lista_abf7d43791f43762fac969ce5448438d3}\label{class_lista_abf7d43791f43762fac969ce5448438d3}} 
+\index{Lista$<$ T $>$@{Lista$<$ T $>$}!removeNode@{removeNode}}
+\index{removeNode@{removeNode}!Lista$<$ T $>$@{Lista$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{removeNode()}{removeNode()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{class_lista}{Lista}}$<$ T $>$\+::remove\+Node (\begin{DoxyParamCaption}\item[{T}]{node }\end{DoxyParamCaption})}
+
+
+
+Função que remove elemento da lista. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & Valor que será removido \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{lista_8hpp}{lista.\+hpp}}\end{DoxyCompactItemize}

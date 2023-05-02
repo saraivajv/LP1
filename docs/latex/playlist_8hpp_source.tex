@@ -1,0 +1,39 @@
+\hypertarget{playlist_8hpp_source}{}\doxysection{playlist.\+hpp}
+\label{playlist_8hpp_source}\index{include/playlist.hpp@{include/playlist.hpp}}
+\mbox{\hyperlink{playlist_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include<iostream>}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include<string>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{musica_8hpp}{musica.hpp}}"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include"{}\mbox{\hyperlink{lista_8hpp}{lista.hpp}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ PLAYLIST\_HPP}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ PLAYLIST\_HPP}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_playlist}{Playlist}}}
+\DoxyCodeLine{00019\ \{}
+\DoxyCodeLine{00020\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00024\ \ \ \ \ std::string\ nome;}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_lista}{Lista<Musica>}}\ *musicas\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_lista}{Lista<Musica>}}();}
+\DoxyCodeLine{00029\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{class_playlist_aef38d55e42995be147977726350f3ada}{Playlist}}();}
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{class_playlist_aef38d55e42995be147977726350f3ada}{Playlist}}(std::string\ n);}
+\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{class_playlist_aef38d55e42995be147977726350f3ada}{Playlist}}(std::string\ n,\ \mbox{\hyperlink{class_lista}{Lista<Musica>}}\ *m);}
+\DoxyCodeLine{00050\ \ \ \ \ \mbox{\hyperlink{class_playlist_aacd9a69e347fc19a9a0787d7a7ce9df4}{\string~Playlist}}();}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_playlist_a2a5b84d607ea6e50de101c46154e504b}{setNome}}(std::string\ n);}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_playlist_a947973954473b29e0a47f0275951a86c}{setMusicas}}(\mbox{\hyperlink{class_lista}{Lista<Musica>}}\ *m);}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_playlist_acf9a470dc5b8733b9631c7408e91d4ff}{addMusica}}(\mbox{\hyperlink{class_musica}{Musica}}\ m);}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_playlist_a450c1f830d29b53e5effd2e1083ed346}{deleteMusica}}(\mbox{\hyperlink{class_musica}{Musica}}\ m);}
+\DoxyCodeLine{00071\ \ \ \ \ }
+\DoxyCodeLine{00077\ \ \ \ \ std::string\ \mbox{\hyperlink{class_playlist_a1de4d435b452de2ef0b92bb4f310b415}{getNome}}();}
+\DoxyCodeLine{00083\ \ \ \ \ \mbox{\hyperlink{class_lista}{Lista<Musica>}}\ *\mbox{\hyperlink{class_playlist_aceea9c42ca9de4b9c1e9304ce2ed87a8}{getMusicas}}();}
+\DoxyCodeLine{00089\ \ \ \ \ \mbox{\hyperlink{class_node}{Node<Musica>}}\ *\mbox{\hyperlink{class_playlist_a8ec264cdd8fcb6f623c4b747ac620237}{buscarMusica}}(\mbox{\hyperlink{class_musica}{Musica}}\ m);}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \ \ \ \ }
+\DoxyCodeLine{00094\ \};}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00096\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//PLAYLIST\_HPP}}
+
+\end{DoxyCode}

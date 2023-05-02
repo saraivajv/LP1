@@ -1,0 +1,151 @@
+\hypertarget{menu_8hpp}{}\doxysection{include/menu.hpp File Reference}
+\label{menu_8hpp}\index{include/menu.hpp@{include/menu.hpp}}
+
+
+menus para o usuario  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}playlist.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lista.\+hpp\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{menu_8hpp_a3a830168118eed158c6f88f2d77fdc23}{menu}} (\mbox{\hyperlink{class_lista}{Lista}}$<$ \mbox{\hyperlink{class_musica}{Musica}} $\ast$ $>$ db\+Musicas, \mbox{\hyperlink{class_lista}{Lista}}$<$ \mbox{\hyperlink{class_playlist}{Playlist}} $\ast$ $>$ db\+Playlists)
+\begin{DoxyCompactList}\small\item\em menu inicial dos usuarios \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{menu_8hpp_a9250150b3ea7e5bfc373ca6187606d63}{m\+Musica}} (\mbox{\hyperlink{class_lista}{Lista}}$<$ \mbox{\hyperlink{class_musica}{Musica}} $\ast$ $>$ db\+Musicas, \mbox{\hyperlink{class_lista}{Lista}}$<$ \mbox{\hyperlink{class_playlist}{Playlist}} $\ast$ $>$ db\+Playlists)
+\begin{DoxyCompactList}\small\item\em menu das musicas \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{menu_8hpp_a39c2d387bd670b241f5da7ddf25819cf}{m\+Playlist}} (\mbox{\hyperlink{class_lista}{Lista}}$<$ \mbox{\hyperlink{class_musica}{Musica}} $\ast$ $>$ db\+Musicas, \mbox{\hyperlink{class_lista}{Lista}}$<$ \mbox{\hyperlink{class_playlist}{Playlist}} $\ast$ $>$ db\+Playlists)
+\begin{DoxyCompactList}\small\item\em menu das playlists \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{menu_8hpp_afca2f5879179b0ce0f81fd293f3bda2d}{m\+Musica\+Playlist}} (\mbox{\hyperlink{class_lista}{Lista}}$<$ \mbox{\hyperlink{class_musica}{Musica}} $\ast$ $>$ db\+Musicas, \mbox{\hyperlink{class_lista}{Lista}}$<$ \mbox{\hyperlink{class_playlist}{Playlist}} $\ast$ $>$ db\+Playlists)
+\begin{DoxyCompactList}\small\item\em menu das musicas nas playlists \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{menu_8hpp_a48f9271db87121419975458abce25cc0}{tocar\+Musica}} (\mbox{\hyperlink{class_lista}{Lista}}$<$ \mbox{\hyperlink{class_musica}{Musica}} $\ast$ $>$ db\+Musicas, \mbox{\hyperlink{class_lista}{Lista}}$<$ \mbox{\hyperlink{class_playlist}{Playlist}} $\ast$ $>$ db\+Playlists)
+\begin{DoxyCompactList}\small\item\em menu das musicas a serem tocadas \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{menu_8hpp_a95d4034cbdb182c546756d3eb0586190}{listar\+Musicas}} (\mbox{\hyperlink{class_lista}{Lista}}$<$ \mbox{\hyperlink{class_musica}{Musica}} $\ast$ $>$ db\+Musicas)
+\begin{DoxyCompactList}\small\item\em listagem das musicas \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{menu_8hpp_ade8d0a271cb05023e2f00baaa3a0f72c}{listar\+Playlists}} (\mbox{\hyperlink{class_lista}{Lista}}$<$ \mbox{\hyperlink{class_playlist}{Playlist}} $\ast$ $>$ db\+Playlists)
+\begin{DoxyCompactList}\small\item\em listagem das playlists \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+menus para o usuario 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{menu_8hpp_a95d4034cbdb182c546756d3eb0586190}\label{menu_8hpp_a95d4034cbdb182c546756d3eb0586190}} 
+\index{menu.hpp@{menu.hpp}!listarMusicas@{listarMusicas}}
+\index{listarMusicas@{listarMusicas}!menu.hpp@{menu.hpp}}
+\doxysubsubsection{\texorpdfstring{listarMusicas()}{listarMusicas()}}
+{\footnotesize\ttfamily void listar\+Musicas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lista}{Lista}}$<$ \mbox{\hyperlink{class_musica}{Musica}} $\ast$ $>$}]{db\+Musicas }\end{DoxyParamCaption})}
+
+
+
+listagem das musicas 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Musicas} & base de dados de musicas \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{menu_8hpp_ade8d0a271cb05023e2f00baaa3a0f72c}\label{menu_8hpp_ade8d0a271cb05023e2f00baaa3a0f72c}} 
+\index{menu.hpp@{menu.hpp}!listarPlaylists@{listarPlaylists}}
+\index{listarPlaylists@{listarPlaylists}!menu.hpp@{menu.hpp}}
+\doxysubsubsection{\texorpdfstring{listarPlaylists()}{listarPlaylists()}}
+{\footnotesize\ttfamily void listar\+Playlists (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lista}{Lista}}$<$ \mbox{\hyperlink{class_playlist}{Playlist}} $\ast$ $>$}]{db\+Playlists }\end{DoxyParamCaption})}
+
+
+
+listagem das playlists 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Musicas} & base de dados de playlists \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{menu_8hpp_a3a830168118eed158c6f88f2d77fdc23}\label{menu_8hpp_a3a830168118eed158c6f88f2d77fdc23}} 
+\index{menu.hpp@{menu.hpp}!menu@{menu}}
+\index{menu@{menu}!menu.hpp@{menu.hpp}}
+\doxysubsubsection{\texorpdfstring{menu()}{menu()}}
+{\footnotesize\ttfamily void menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lista}{Lista}}$<$ \mbox{\hyperlink{class_musica}{Musica}} $\ast$ $>$}]{db\+Musicas,  }\item[{\mbox{\hyperlink{class_lista}{Lista}}$<$ \mbox{\hyperlink{class_playlist}{Playlist}} $\ast$ $>$}]{db\+Playlists }\end{DoxyParamCaption})}
+
+
+
+menu inicial dos usuarios 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Musicas} & base de dados de musicas \\
+\hline
+{\em db\+Playlists} & base de dados de playlists \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{menu_8hpp_a9250150b3ea7e5bfc373ca6187606d63}\label{menu_8hpp_a9250150b3ea7e5bfc373ca6187606d63}} 
+\index{menu.hpp@{menu.hpp}!mMusica@{mMusica}}
+\index{mMusica@{mMusica}!menu.hpp@{menu.hpp}}
+\doxysubsubsection{\texorpdfstring{mMusica()}{mMusica()}}
+{\footnotesize\ttfamily void m\+Musica (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lista}{Lista}}$<$ \mbox{\hyperlink{class_musica}{Musica}} $\ast$ $>$}]{db\+Musicas,  }\item[{\mbox{\hyperlink{class_lista}{Lista}}$<$ \mbox{\hyperlink{class_playlist}{Playlist}} $\ast$ $>$}]{db\+Playlists }\end{DoxyParamCaption})}
+
+
+
+menu das musicas 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Musicas} & base de dados de musicas \\
+\hline
+{\em db\+Playlists} & base de dados de playlists \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{menu_8hpp_afca2f5879179b0ce0f81fd293f3bda2d}\label{menu_8hpp_afca2f5879179b0ce0f81fd293f3bda2d}} 
+\index{menu.hpp@{menu.hpp}!mMusicaPlaylist@{mMusicaPlaylist}}
+\index{mMusicaPlaylist@{mMusicaPlaylist}!menu.hpp@{menu.hpp}}
+\doxysubsubsection{\texorpdfstring{mMusicaPlaylist()}{mMusicaPlaylist()}}
+{\footnotesize\ttfamily void m\+Musica\+Playlist (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lista}{Lista}}$<$ \mbox{\hyperlink{class_musica}{Musica}} $\ast$ $>$}]{db\+Musicas,  }\item[{\mbox{\hyperlink{class_lista}{Lista}}$<$ \mbox{\hyperlink{class_playlist}{Playlist}} $\ast$ $>$}]{db\+Playlists }\end{DoxyParamCaption})}
+
+
+
+menu das musicas nas playlists 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Musicas} & base de dados de musicas \\
+\hline
+{\em db\+Playlists} & base de dados de playlists \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{menu_8hpp_a39c2d387bd670b241f5da7ddf25819cf}\label{menu_8hpp_a39c2d387bd670b241f5da7ddf25819cf}} 
+\index{menu.hpp@{menu.hpp}!mPlaylist@{mPlaylist}}
+\index{mPlaylist@{mPlaylist}!menu.hpp@{menu.hpp}}
+\doxysubsubsection{\texorpdfstring{mPlaylist()}{mPlaylist()}}
+{\footnotesize\ttfamily void m\+Playlist (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lista}{Lista}}$<$ \mbox{\hyperlink{class_musica}{Musica}} $\ast$ $>$}]{db\+Musicas,  }\item[{\mbox{\hyperlink{class_lista}{Lista}}$<$ \mbox{\hyperlink{class_playlist}{Playlist}} $\ast$ $>$}]{db\+Playlists }\end{DoxyParamCaption})}
+
+
+
+menu das playlists 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Musicas} & base de dados de musicas \\
+\hline
+{\em db\+Playlists} & base de dados de playlists \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{menu_8hpp_a48f9271db87121419975458abce25cc0}\label{menu_8hpp_a48f9271db87121419975458abce25cc0}} 
+\index{menu.hpp@{menu.hpp}!tocarMusica@{tocarMusica}}
+\index{tocarMusica@{tocarMusica}!menu.hpp@{menu.hpp}}
+\doxysubsubsection{\texorpdfstring{tocarMusica()}{tocarMusica()}}
+{\footnotesize\ttfamily void tocar\+Musica (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_lista}{Lista}}$<$ \mbox{\hyperlink{class_musica}{Musica}} $\ast$ $>$}]{db\+Musicas,  }\item[{\mbox{\hyperlink{class_lista}{Lista}}$<$ \mbox{\hyperlink{class_playlist}{Playlist}} $\ast$ $>$}]{db\+Playlists }\end{DoxyParamCaption})}
+
+
+
+menu das musicas a serem tocadas 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Musicas} & base de dados de musicas \\
+\hline
+{\em db\+Playlists} & base de dados de playlists \\
+\hline
+\end{DoxyParams}

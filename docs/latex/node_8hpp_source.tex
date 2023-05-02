@@ -1,0 +1,38 @@
+\hypertarget{node_8hpp_source}{}\doxysection{node.\+hpp}
+\label{node_8hpp_source}\index{include/node.hpp@{include/node.hpp}}
+\mbox{\hyperlink{node_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include<iostream>}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include<string>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#ifndef\ NODE\_HPP}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#define\ NODE\_HPP}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00016\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_lista}{Lista}};}
+\DoxyCodeLine{00022\ \textcolor{keyword}{template}<\textcolor{keyword}{class}\ T>}
+\DoxyCodeLine{00023\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_node}{Node}}}
+\DoxyCodeLine{00024\ \{}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_lista}{Lista}}<T>;}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00035\ \ \ \ \ T\ data;}
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{class_node}{Node<T>}}\ *next;}
+\DoxyCodeLine{00043\ \ \ \ \ \mbox{\hyperlink{class_node}{Node<T>}}\ *prev;}
+\DoxyCodeLine{00044\ \ \ \ \ }
+\DoxyCodeLine{00045\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00050\ \ \ \ \ \mbox{\hyperlink{class_node_a0ac1d44cfe588be564acf25485029bd8}{Node}}();}
+\DoxyCodeLine{00055\ \ \ \ \ \mbox{\hyperlink{class_node_a0ac1d44cfe588be564acf25485029bd8}{Node}}(T);}
+\DoxyCodeLine{00060\ \ \ \ \ \mbox{\hyperlink{class_node_ae923d0417581dd19784d55b901f0f7f0}{\string~Node}}();}
+\DoxyCodeLine{00066\ \ \ \ \ T\ \mbox{\hyperlink{class_node_a0c3315ee2e897e2a6e1c24aeca20aeb9}{getData}}();}
+\DoxyCodeLine{00072\ \ \ \ \ \mbox{\hyperlink{class_node}{Node<T>}}\ *\mbox{\hyperlink{class_node_a688501032615bbd05c9f42ef89d63db5}{getNext}}();}
+\DoxyCodeLine{00078\ \ \ \ \ \mbox{\hyperlink{class_node}{Node<T>}}\ *\mbox{\hyperlink{class_node_ad22ef9664eb11f25fd75f2b3a8d19d4b}{getPrev}}();}
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_node_a3955130f36c0a6d39641dee186caf2a3}{setData}}(T\ data);}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \ \ \ \ }
+\DoxyCodeLine{00087\ \};}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//NODE\_HPP}}
+
+\end{DoxyCode}

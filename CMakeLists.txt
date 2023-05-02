@@ -13,6 +13,7 @@ add_executable( program
 src/main.cpp
 src/node.cpp
 src/musica.cpp 
-src/playlist.cpp)
+src/playlist.cpp
+src/menu.cpp)
 # define C++14 standard
 set_property(TARGET program PROPERTY CXX_STANDARD 14)

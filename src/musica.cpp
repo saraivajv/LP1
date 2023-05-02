@@ -28,6 +28,16 @@ using namespace std;
         return this->nome;
 }
 
+    void Musica::setNome(std::string n)
+{
+        this->nome = n;
+}
+
+void Musica::setArtista(std::string a)
+{
+        this->artista = a;
+}
+
 
 
 

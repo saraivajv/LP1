@@ -4,31 +4,91 @@
 #ifndef LISTA_HPP
 #define LISTA_HPP
 
+/**
+ * @file lista.hpp
+ * 
+ * @brief Implementação da lista 
+ * 
+ */
+
+using namespace std;
+
+
+/**
+ *  @class Lista lista.hpp "include/lista.hpp"
+    @brief Implementação de uma classe Lista
+    @param T Variável template
+ * 
+ */
 template<class T>
 class Lista
 {
 private:
+/**
+ * @brief Inicio da lista
+ * 
+ */
     Node<T>* head;
 public:
+    /**
+     * @brief Construtor de objeto Lista
+     * @param NULL
+     * 
+     */
     Lista();
-
+    /**
+     * @brief Destrutor de objeto Lista
+     * @param NULL
+     * 
+     */
     ~Lista();
-    
+    /**
+     * @brief Função que insere elemento na frente da lista
+     * 
+     * @param node Valor que será inserido 
+     */
     void addFront(T node);
+    /**
+     * @brief Função que insere elemento atrás da lista
+     * 
+     * @param node Valor que será inserido 
+     */
     void addBack(T node);
+    /**
+     * @brief Função que remove elemento da lista
+     * 
+     * @param node Valor que será removido 
+     */
     void removeNode(T node);
+    /**
+     * @brief Função que printa a lista
+     * 
+     * @param NULL
+     */
+    void printLista();
 
+    /**
+     * @brief Função que busca elemento na lista
+     * @return Iterador para o valor
+     * @param node Valor que será buscado 
+     */
     Node<T> *Buscar(T node);
 
-    int tamanho();
     
 };
-
+/**
+     * Construtor
+     *
+     */
 template<class T>
 Lista<T>::Lista(){
-    head = 0;
+    head = nullptr;
 }
 
+/**
+     * Destrutor
+     *
+     */
 template <class T>
 Lista<T>::~Lista(){
     Node<T> *node = head;
@@ -42,10 +102,13 @@ Lista<T>::~Lista(){
     }
     
 }
-
+/**
+     * Insere elemento na frente da lista
+     *
+     */
 template <class T>
 void Lista<T>::addFront(T node){
-    Node<T> *newNode = new Node<T>();
+    Node<T> *newNode = new Node<T>;
     newNode->data = node;
 
     if(head == nullptr){
@@ -59,6 +122,10 @@ void Lista<T>::addFront(T node){
     head = newNode;
 }
 
+/**
+     * Insere elemento atrás da lista
+     *
+     */
 template <class T>
 void Lista<T>::addBack(T node){
     Node<T> *newNode = new Node<T>();
@@ -70,7 +137,7 @@ void Lista<T>::addBack(T node){
         newNode->prev = nullptr;
         return;
     }
-   Node<T> tempNode = head;
+   Node<T> *tempNode = head;
    while(tempNode->next != nullptr){
     tempNode = tempNode->next;
    }
@@ -79,6 +146,10 @@ void Lista<T>::addBack(T node){
    newNode->prev = tempNode;
 }
 
+/**
+     * Busca elemento na lista
+     *
+     */
 template <class T>
 Node<T> *Lista<T>::Buscar(T node){
     Node<T>* tempNode = head;
@@ -94,14 +165,17 @@ Node<T> *Lista<T>::Buscar(T node){
     return nullptr;
 }
 
+/**
+     * Remove elemento da lista
+     *
+     */
 template <class T>
 void Lista<T>::removeNode(T node){
-    Node<T> *tempNode, tempNode2;
+    Node<T> *tempNode, *tempNode2;
 
     if(head == nullptr){
         cout << "Lista sem elementos";
     }
-    // Checando Node pelo head
    else if(head->data == node){
         tempNode = head;
 
@@ -123,7 +197,6 @@ void Lista<T>::removeNode(T node){
    tempNode2 = head;
    while(tempNode2->next->next != nullptr){
 
-        // Node entre outros Nodes
         if(tempNode2->next->data == node){
             tempNode = tempNode2->next;
             tempNode2->next = tempNode->next;
@@ -135,7 +208,6 @@ void Lista<T>::removeNode(T node){
         tempNode2 = tempNode2->next;
    }
 
-    // Node fim da lista
    if(tempNode2->next->data == node){
             tempNode = tempNode2->next;
             delete tempNode;
@@ -145,19 +217,29 @@ void Lista<T>::removeNode(T node){
     }
     cout << "Elemento não encontrado" << endl;
 }
+
+/**
+     * Printa a lista
+     *
+     */
 template <class T>
-int Lista<T>::tamanho(){
-    if(head == nullptr){
-        return 0;
-    }
+void Lista<T>::printLista(){
 
     Node<T> *tempNode = head;
-    int n = 0;
-    while(tempNode != nullptr){
-        n++;
-        tempNode = tempNode->next;
+    if(tempNode == nullptr){
+        cout << "Lista vazia" << endl;
+        return;
     }
-    return n;
+    if(tempNode->next == nullptr){
+        cout << tempNode->data << endl;
+        return;
+    }
+    else{
+        while(tempNode != nullptr){
+            cout << tempNode->data << endl;
+            tempNode = tempNode->next;
+        }
+    }
 }
 
 #endif //LISTA_HPP

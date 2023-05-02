@@ -1,0 +1,42 @@
+\hypertarget{musica_8hpp_source}{}\doxysection{musica.\+hpp}
+\label{musica_8hpp_source}\index{include/musica.hpp@{include/musica.hpp}}
+\mbox{\hyperlink{musica_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include<iostream>}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include<string>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#ifndef\ MUSICA\_HPP}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#define\ MUSICA\_HPP}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_musica}{Musica}}}
+\DoxyCodeLine{00019\ \{}
+\DoxyCodeLine{00020\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00025\ \ \ \ \ std::string\ nome;}
+\DoxyCodeLine{00030\ \ \ \ \ std::string\ artista;}
+\DoxyCodeLine{00031\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{class_musica_a435c4de75bd638108bf9caae58000e18}{Musica}}();}
+\DoxyCodeLine{00042\ \ \ \ \ \mbox{\hyperlink{class_musica_a435c4de75bd638108bf9caae58000e18}{Musica}}(std::string\ n,\ std::string\ a);}
+\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{class_musica_aebcf7c6bd83ea83d172be34e2fd550f2}{\string~Musica}}();}
+\DoxyCodeLine{00052\ \ \ \ \ std::string\ \mbox{\hyperlink{class_musica_a0abb19f3c06839bb8c9b5997698d7242}{getNome}}();}
+\DoxyCodeLine{00057\ \ \ \ \ std::string\ \mbox{\hyperlink{class_musica_aa0bb829c5d11ec268f4cb71ecf48d143}{getArtista}}();}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_musica_ad21601dc4e1365fa54fd5e607bc129e4}{setNome}}(std::string\ n);}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_musica_a7fbbd047177d9143464763826d1ea60d}{setArtista}}(std::string\ a);}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keyword}{friend}\ ostream\ \&\mbox{\hyperlink{class_musica_ada87f52427117e093b66508796e0126f}{operator<<}}(ostream\ \&stream,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_musica}{Musica}}\ \&musica)\{}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ stream\ <<\ \textcolor{stringliteral}{"{}Musica:\ "{}}\ <<\ musica.nome\ <<\ endl;}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ stream\ <<\ \textcolor{stringliteral}{"{}Artista:\ "{}}\ <<\ musica.artista\ <<\ endl;}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ stream;}
+\DoxyCodeLine{00077\ \ \ \ \ \}}
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_musica_a504333fbc70136f2eba4937dbc97ecfa}{operator\ ==}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_musica}{Musica}}\ \&musica,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_musica}{Musica}}\ \&musica2)\{}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(musica.nome\ ==\ musica2.nome)\{}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00089\ \ \ \ \ \}}
+\DoxyCodeLine{00090\ \ \ \ \ }
+\DoxyCodeLine{00091\ \};}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//MUSICA\_HPP}}
+
+\end{DoxyCode}
